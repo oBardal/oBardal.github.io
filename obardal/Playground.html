@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="widht=device-widht, initial-scale=1.0" />
-    <title>Bardal's Moonlight | Projects</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="widht=device-widht, initial-scale=1.0" />
+	<title>Bardal's Moonlight | Playground</title>
     <link rel="stylesheet" href="styles.css"/>
+	<link rel="stylesheet" href="PlayStyles.css"/>
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">|Bardal|</a>
-        <ul>
-            <li><a href="../index.html">Início</a></li>
-            <li><a href="#" class="active">Projetos</a></li>
-            <li><a href="Playground.html">SandBox</a></li>
-            <li><a href="ContactPage.html">Contato</a></li>
-        </ul>
-    </header>
+	<header>
+		<a href="#" class="logo">|Bardal|</a>
+		<ul>
+			<li><a href="../index.html">Início</a></li>
+			<li><a href="obardal/ProjectsPage.html">Projetos</a></li>
+			<li><a href="#" class="active">SandBox</a></li>
+			<li><a href="obardal/ContactPage.html">Contato</a></li>
+		</ul>
+	</header>
     <section>
         <img src="Images/stars.png" id="stars">
         <img src="Images/moon.png" id="moon">
@@ -23,20 +24,21 @@
         <a href="#" id="btn">Explore</a>
         <img src="Images/mountains_front.png" id="front">
     </section>
-    <div class="sec" id="sec">
-        <h2>Projetos da escola:</h2>
-        <ul class="temps">
-            <li><a href="#" class="newest">Lampada LED</a></li>
-        </ul>
+
+    <div class="bardas">
+        <h2>Mensagem do Bardal:</h2>
+        <p>Se você quer uma mensagem sua aqui, é só pedir pro Davi;</p>
+        <br><br>
+        <p>Aproveita e chama alguém, que aí mais pessoas vão ter mensagens aqui! Vai ser legal</p>
     </div>
-    <div class="tir" id="tir">
-        <h2>Jogos:</h2>
-        <ul class="temps">
-            <li><a href="https://www.roblox.com/games/6834633893/Cristal-Forest" target="_blank">Cristal Forest</a></li>
-            <li><a href="https://www.roblox.com/games/6246158039/the-talking-block" target="_blank" class="newest">The Talking Block</a></li>
-            <li><a href=" https://www.roblox.com/games/7143760824/a-normal-house" target="_blank">A Normal House</a></li>
-        </ul>
+
+    <div class="pedro">
+        <h2>Mensagem do Pedro Bardal:</h2>
+        <p>oi</p>
+        <br><br>
+        <p>roblox</p>
     </div>
+
     <script>
         let stars = document.getElementById('stars');
         let moon = document.getElementById('moon');
@@ -50,7 +52,7 @@
         window.addEventListener('scroll', function(){
             let value = window.scrollY;
 
-            if (value < 500) {
+            if (value < 100) {
                 stars.style.left = value * 0.75 + 'px';
                 moon.style.top = value * 1.05 + 'px';
                 behind.style.top = value * 0.5 + 'px';

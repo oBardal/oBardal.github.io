@@ -1,0 +1,39 @@
+.bardas
+{
+    position: relative;
+    padding: 20px;
+    background: #2b1055;
+}
+.bardas h2
+{
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.bardas p
+{
+    font-size: 1em;
+    color: #fff;
+}
+
+
+
+
+
+.pedro
+{
+    position: relative;
+    padding: 20px;
+    background: #0935b7;
+}
+.pedro h2
+{
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.pedro p
+{
+    font-size: 1em;
+    color: #fff;
+}

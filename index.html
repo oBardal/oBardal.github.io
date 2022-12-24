@@ -1,41 +1,75 @@
 <!DOCTYPE html>
 
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="widht=device-widht, initial-scale=1.0" />
-		<title>Cool website</title>
-		<link rel="stylesheet" href="oBardal/styles.css"/>
-		<link rel="shortcut icon" type="x-icon" href="oBardal/Custom_Images/Bulb.png">
-	</head>
-	<body>
-		<nav>
-			<h1>Cool title</h1>
-			<ul>
-				<li><a href="index.html"> Home</a></li>
-				<li><a href="oBardal/ProjectsPage.html"> Projectos</a></li>
-				<li><a href="oBardal/ContactPage.html"> Contato</a></li>
-			</ul>
-		</nav>
-		<section>
-			<h1>Muito obrigado por entrar no website!</h1>
-			<p>
-				Este é um projeto em HTML apenas para eu aprender a linguagem!
-			</p>
-			<img 
-			src="https://th.bing.com/th/id/OIP.-vIErnMpQulsOR-5pW3FFAHaHa?w=183&h=183&c=7&r=0&o=5&dpr=1.25&pid=1.7" 
-			alt="Foto de uma galinha"
-			>
-			<section>
-				<p>
-					Agora isso tá no ar! Mt feliz :)
-				</p>
-				<img 
-				src="oBardal/Custom_Images/20220415184602_1.jpg" 
-				alt="Rare UFO"
-				>
-			</section>	
-		</section>
-	</body>
-	<footer>
-		<p>O Bardal &copy; 2022</p>
-	</footer>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="widht=device-widht, initial-scale=1.0" />
+	<title>Bardal's Moonlight | Home</title>
+	<link rel="stylesheet" href="oBardal/styles.css"/>
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">|Bardal|</a>
+		<ul>
+			<li><a href="#" class="active">Início</a></li>
+			<li><a href="obardal/ProjectsPage.html">Projetos</a></li>
+			<li><a href="obardal/Playground.html">SandBox</a></li>
+			<li><a href="obardal/ContactPage.html">Contato</a></li>
+		</ul>
+	</header>
+	<section>
+		<img src="obardal/Images/stars.png" id="stars">
+		<img src="obardal/Images/moon.png" id="moon">
+		<img src="obardal/Images/mountains_behind.png" id="behind">
+		<h2 id="text">Moonlight</h2>
+		<a href="#" id="btn">Explore</a>
+		<img src="obardal/Images/mountains_front.png" id="front">
+	</section>
+	<div class="sec" id="sec">
+		<h2>Sobre o website</h2>
+		<h6>Olá,</h6>
+		<hr></hr>
+		<p> Seja bem vindo ao meu website, esse projeto é o primeiro que faço onde tenho o intuito de postar para a web então
+			decidi colocar um pouco mais de esforço neste.				<br><br>
+			
+			Para este website decidi que quero usar como um local para guardar alguns projetos que faço, porque acho que facilitará 
+			para mostrar alguns projetos para professores ou amigos. 	<br><br>
+
+			Fato engraçado: a primeira página do website, esta mesmo foi a mais demorada de fazer, após isso ficou mais fácil, o 
+			resto é apenas usar uma parte já feita e pronto! 			<br><br>
+
+			Se você é um professor ou amigo meu e continua lendo meu site, queria agradecer você, não é tantas pessoas que coonhecem,
+			e é bom saber que há pessoas que aproveitam!				<br><br>
+		</p>
+	</div>
+	<div class="tir" id="tir">
+		<h2>Como ver os projetos ?</h2>
+		<p>Está com dificuldade de achar como acessar os projetos do aluno? apenas aperte o botão abaixo e você será levado para a página respectiva</p>
+		<br> <br>
+		<a href="obardal/ProjectsPage.html" class="ZZ">Projetos</a>
+	</div>
+	<script>
+		let stars = document.getElementById('stars');
+		let moon = document.getElementById('moon');
+		let front = document.getElementById('front');
+		let text = document.getElementById('text');
+		let btn = document.getElementById('btn');
+		let behind = document.getElementById('behind');
+
+		let header = document.querySelector("header")
+
+		window.addEventListener('scroll', function(){
+			let value = window.scrollY;
+
+			if (value < 600) {
+				stars.style.left = value * 0.75 + 'px';
+				moon.style.top = value * 1.05 + 'px';
+				behind.style.top = value * 0.5 + 'px';
+
+				text.style.marginRight = value * 3 +'px';
+				btn.style.margintop = value * 1 + 'px';
+
+				header.style.top = value * 1.05 + 'px';
+			}
+		})
+	</script>
+</body>
