@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="widht=device-widht, initial-scale=1.0" />
+    <title>Bardal's Moonlight | Projects | Torre de Hanói</title>
+    <link rel="stylesheet" href="../Styles.css"/>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">「Bardal」</a>
+        <ul>
+            <li><a href="../../index.html">Início</a></li>
+            <li><a href="#" class="active">Projetos</a></li>
+            <li><a href="../../Playground.html">SandBox</a></li>
+            <li><a href="../../ContactPage.html">Contato</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="../Images/stars.png" id="stars">
+        <img src="../Images/moon.png" id="moon">
+        <img src="../Images/mountains_behind.png" id="behind">
+        <a href="#" id="btn">Explore</a>
+        <img src="../Images/mountains_front.png" id="front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Veja outros Projetos!</h2>
+        <ul class="temps">
+            <li><a href="#" class="newest">Lampada LED</a></li>
+            <li><a href="#">Foguete</a></li>
+        </ul>
+    </div>
+    <div class="tir" id="tir">
+        <h2>Olá, hoje eu vou explicar o que é a Torre de Hanói e como ela funciona!</h2>
+        <img src="../Images/TorreDeHanoi.jpg" style="width: 70%; height: 70%;">
+        <br><br>
+        <h2>Como a brincadeira funciona?</h2>
+        <p>A brincadeira começa com 6 pequenos circulos presos em ordem decrescente de baixo pra cima em um dos três pinos.</p><br>
+        <p>O seu objetivo é fazer com que a torre de circulos passe para outro pino, equanto está na mesma ordem, seguindo algumas regras para chegar lá</p><br>
+        <p>1 - Mover apenas um disco por vez;<br>2 - ao fazer um movimento a peça que está em cima, deve ser menor doque a que está em baixo</p>
+        <br>
+        <br>
+        <h2>E agora como resolver?</h2>
+        <p>A teoria dessa torre é bem simples, apenas só se esforçar um pouco e tentar você mesmo para entender melhor como funciona!</p>
+        <br>
+        <p>para mostrar como funciona eu fiz uma pequena lista para mostrar como funciona</p>
+        <br>
+        <p>
+            1° Se o numero for impar -> <br>
+            2° fazer o único movimento legal entre a primeira torre e a terceira -><br>
+            3° fazer unico movimento legal entre a primeira e segunda torre -> <br>
+            4° fazer unico movimento legal entre a segunda e terceira torre<br>
+            Repitir passos 2, 3 e 4 até completar o desafio!<br>
+        </p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let front = document.getElementById('front');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let behind = document.getElementById('behind');
+
+        let header = document.querySelector("header")
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            if (value < 500) {
+                stars.style.left = value * 0.75 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                behind.style.top = value * 0.5 + 'px';
+
+                text.style.marginRight = value * 3 +'px';
+                btn.style.margintop = value * 1 + 'px';
+
+                header.style.top = value * 1.05 + 'px';
+            }
+        })
+
+        
+    </script>
+</body>
