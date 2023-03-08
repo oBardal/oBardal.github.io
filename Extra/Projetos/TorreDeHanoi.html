@@ -31,27 +31,50 @@
             <li><a href="#">Foguete</a></li>
         </ul>
     </div>
-    <div class="tir" id="tir">
-        <h2>Olá, hoje eu vou explicar o que é a Torre de Hanói e como ela funciona!</h2>
-        <img src="../Images/TorreDeHanoi.jpg" style="width: 70%; height: 70%;">
+    <div class="sec" id="sec" style="background-color: #25072d;">
+        <h2  style="color: #afa6e6; font-size: 2.5em;">Olá, hoje eu vou explicar o que é a Torre de Hanói e como ela funciona!</h2>
+        <img src="../Images/TorreDeHanoi.jpg" style="width: 60%; height: 60%;">
         <br><br>
-        <h2>Como a brincadeira funciona?</h2>
+        <h2 style="color: #afa6e6;">Como a brincadeira funciona?</h2>
         <p>A brincadeira começa com 6 pequenos circulos presos em ordem decrescente de baixo pra cima em um dos três pinos.</p><br>
         <p>O seu objetivo é fazer com que a torre de circulos passe para outro pino, equanto está na mesma ordem, seguindo algumas regras para chegar lá</p><br>
         <p>1 - Mover apenas um disco por vez;<br>2 - ao fazer um movimento a peça que está em cima, deve ser menor doque a que está em baixo</p>
         <br>
         <br>
-        <h2>E agora como resolver?</h2>
+        <h2 style="color: #afa6e6;">E agora como resolver?</h2>
         <p>A teoria dessa torre é bem simples, apenas só se esforçar um pouco e tentar você mesmo para entender melhor como funciona!</p>
         <br>
         <p>para mostrar como funciona eu fiz uma pequena lista para mostrar como funciona</p>
         <br>
+        <p><br>
+            1° fazer único movimento legal entre a primeira e terceira torre -><br>
+            2° fazer unico movimento legal entre a primeira e segunda torre -> <br>
+            3° fazer unico movimento legal entre a segunda e terceira torre<br>
+            Repitir passos 1, 2 e 3 até completar o desafio!<br>
+        </p><br>
+        
+        <h2 style="color: #afa6e6;">Que tal um programa!</h2>
         <p>
-            1° Se o numero for impar -> <br>
-            2° fazer o único movimento legal entre a primeira torre e a terceira -><br>
-            3° fazer unico movimento legal entre a primeira e segunda torre -> <br>
-            4° fazer unico movimento legal entre a segunda e terceira torre<br>
-            Repitir passos 2, 3 e 4 até completar o desafio!<br>
+            Definir A = primeira torre do conjunto<br>
+            Definir B = segunda torre do conjunto<br>
+            Definir C = terceira torre do conjunto<br>
+            <br>
+            função Head(X, Y)<br><br>
+                se estado da torre B = completo então<br>
+                    parar programa<br><br>
+                se não se tamanho da peça mais alta da torre Y > tamanho da peça mais alta da torre X então<br>
+                    mover peça mais alta da torre X para torre respectiva de Y<br><br>
+                se não<br>
+                    mover peça mais alta da torre Y para torre respectiva de X<br><br>
+                end<br>
+            end<br>
+            <br>
+            <br>
+            repetir até estado de torre C = completa:<br><br>
+                Ativar função head(A, C)<br>
+                Ativar função head(A, B)<br>
+                Ativar função head(B, C)<br><br>
+            end<br>
         </p>
     </div>
     <script>
