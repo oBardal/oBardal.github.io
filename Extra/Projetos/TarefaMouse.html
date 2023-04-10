@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="widht=device-widht, initial-scale=1.0" />
+    <title>Bardal's Moonlight | Projects | Mouse</title>
+    <link rel="stylesheet" href="../Styles.css"/>
+    <link rel="icon" href="Extra/Images/WebIcon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">「Bardal」</a>
+        <ul>
+            <li><a href="../../index.html">Início</a></li>
+            <li><a href="#" class="active">Projetos</a></li>
+            <li><a href="../../Playground.html">SandBox</a></li>
+            <li><a href="../../ContactPage.html">Contato</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="../Images/stars.png" id="stars">
+        <img src="../Images/moon.png" id="moon">
+        <img src="../Images/mountains_behind.png" id="behind">
+        <a href="#" id="btn">Explore</a>
+        <img src="../Images/mountains_front.png" id="front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Veja outros Projetos!</h2>
+        <ul class="temps">
+            <li><a href="TorreDeHanoi.html" class="newest">Torre De Hanoi</a></li>
+            <li><a href="#">Foguete</a></li>
+        </ul>
+    </div>
+    <div class="sec" id="sec" style="background-color: #25072d;">
+        <h2  style="color: #afa6e6; font-size: 2.5em;">Olá, hoje eu vou explicar um pouco sobre como um Mouse de computador funciona!</h2>
+        <img src="../Images/Mouse - 3.jpeg" style="width: 40%; height: 40%; border-radius: 10px;">
+        <br><br>
+        <h2 style="color: #afa6e6;">1 - Componentes:</h2>
+        <ul style="color: white; font-size: 20px; padding-left: 60px;">
+            <li>| 3 | Botões</li>
+            <li>| 2 | Hardware simples</li>
+            <li>| 1 | Emissor de luz IF </li>
+            <li>| 1 | Receptor de luz IF</li>
+            <li>| 1 | Luz LED</li>
+            <li>| 1 | Lente</li>
+            <li>| 2 | Carcassa plástica</li>
+        </ul>
+        <br>
+        <br>
+        <img src="../Images/Mouse - 1.jpeg" style="width: 40%; height: 40%; border-radius: 10px;">
+        <img src="../Images/Mouse - 2.jpeg" style="width: 40%; height: 40%; margin-left: 30px; border-radius: 10px;">
+        <br>
+        <br>
+        <h2 style="color: #afa6e6;">Qual a função de cada peça?</h2>
+        <p>Cada peça no mouse tem uma função diferente, e algumas trabalham em conjunto para terem mais precisão em algumas medidas!</p>
+        <br>
+        <ul style="color: white; font-size: 20px; padding-left: 60px;">
+            <li>Botões <br> <p style="font-size: 15px; padding-left: 20px;">Os botões do mouse servem para cada um registrar os inputs do usuário, o terceiro botão serve para registrar quando o usuário prime a roda do mouse</p> </li>
+            <br><br>
+            <li>Hardware Simples <br> <p style="font-size: 15px; padding-left: 20px;">O Hardwave usado serve para fazer pequenos calculos para registrar a movimentação x e y do aparelho e enviar corretamente ao computador</p></li>
+            <br><br>
+            <li>Emissor / Receptor de luz Infra-Vermelho <br> <p style="font-size: 15px; padding-left: 20px;">Os dois sensores servem para identificar quando a roda, ou "Scroll" gira e manda a informação de "True" se o sinal é visivel e "False" se o contrário, além de que se está girando para frente ou para trás</p></li>
+            <br><br>
+            <li>Lente / Luz LED <br> <p style="font-size: 15px; padding-left: 20px;">Os dois servem para auxiliar a leitura do hardware com o movimento do mouse</p></li>
+            <br><br>
+            <li>Carcassa plástica <br> <p style="font-size: 15px; padding-left: 20px;">As duas peças que são presas por 1 parafuso e um pouco de engenharia servem para dar conforto e um visual mais bonito e funcional ao mouse</p></li>
+        </ul>
+        <br><br>
+        
+        <h2 style="color: #afa6e6;">Observações:</h2>
+        <ul style="color: white; font-size: 20px; padding-left: 60px;">
+            <li>Matéria-Prima usada: <br> <p style="font-size: 15px; padding-left: 20px;">Plástico é comumente usado na maior parte dos eletrodomésticos, possui ~60 gramas de plástico usado na produção do mouse, contando com pequenos suportes e o encapamento do fio</p></li>
+            <br><br>
+            <li>Produção: <br> <p style="font-size: 15px; padding-left: 20px;">Cada peça é produzida de forma independentemente e depois é juntada e soldada formando um único produto</p></li>
+            <br><br>
+            <li>Só mais uma coisa: <br> <p style="font-size: 15px; padding-left: 20px;">O mouse usado já não funcionava mais, oque foi bom pois não consegui monta-lo novamente desde que algumas pequenas peças de ferro foram ejetadas para longe, muito obrigado por ler até o final prof!</p></li>
+            <br><br>
+            <img src="../Images/Mouse - 4.jpeg" style="width: 40%; height: 40%; margin-left: 30px; border-radius: 10px;">
+        </ul>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let front = document.getElementById('front');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let behind = document.getElementById('behind');
+
+        let header = document.querySelector("header")
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            if (value < 600) {
+                stars.style.left = value * 0.75 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                behind.style.top = value * 0.5 + 'px';
+
+                text.style.marginRight = value * 3 +'px';
+                btn.style.margintop = value * 1 + 'px';
+
+                header.style.top = value * 1.05 + 'px';
+            }
+        })
+
+        
+    </script>
+</body>
