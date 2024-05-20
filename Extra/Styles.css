@@ -129,6 +129,18 @@ section img#front
     z-index: 9;
     transform: translateY(100px);
 }
+#btn232323
+{
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 3em;
+    z-index: 9;
+    transform: translateY(-40px);
+}
+
 .sec
 {
     position: relative;

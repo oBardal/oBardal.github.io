@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="widht=device-widht, initial-scale=1.0" />
+	<title>Niver do Vitooooooor 🥳</title>
+    <link rel="stylesheet" href="Extra/Styles.css"/>
+	<link rel="stylesheet" href="Extra/PlayStyles.css"/>
+    <link rel="icon" href="Extra/Images/WebIcon.ico" type="image/x-icon">
+</head>
+<body>
+    <section>
+        <img src="Extra/Images/stars.png" id="stars">
+        <img src="Extra/Images/PartyEmoi_Big2.png" id="moon">
+        <a href="#" id="btn232323">Feliz Aniversário!</a>
+        <img src="Extra/Images/mountains_front.png" id="front">
+    </section>
+
+    <div class="sec" id="sec">
+        <h2>Feliz aniverssário Vitor!</h2>
+        <p>Muitos anos de vida, que Deus que abençoe e te guarde para viver uma vida plena e cheia de alegria.</p>
+        <br><br>
+        <p>Continue sendo essa pessoa incrível que você é Vitor, sabe que eu me importo muito contigo! Muito bom estar ao seu lado e ver suas conquistas, batalhas e estar ao seu lado nos momentos positivos</p>
+        <br><br>
+        <p>Vitão, sei que você sabe, mas sempre lembre que você não está sozinho pra nada, a gente está sempre aqui para ajudar e conversar! 👍😁👍❤️</p>
+        <br><br>
+        <p>Como todo aniversário não pode faltar um pouco de "Zoas" vou passar a te chamar de:</p>
+        <br>
+        <p>Vi, Vivi, Vitinho, Vitão, Vitásso, Vitrola, Vitorzinho, Vitu, Vitório, Vitoriano, Vitocas, Vitu du bem, Vituz, Vitim, Vivitima, Vitorzinho Estrela Brilhante, Vitrine, Vivo, Vevo, Vic, Vix, Vicky, Vicki, Vector, Vitolino, Vinheta, Vital, Vitamina B12, Evite, Vitominé, Vitrola, Vulvitor, AlVitor, Dom Vitor I, Vetor(xyz), Vítor, Inimigo do Gru, VETOOOOOOR, "Vitu, eleva por favor", Vitorioso, Lui Viton, Vidente, Oliveira, Vincent, Vit, VitorVicenteOliveiraDaSilvaGamaMarquesVieiraMachadoDeAssis</p>
+        <br><br>
+        <img src="Extra/Images/Vetoooor.jpg">
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let front = document.getElementById('front');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let behind = document.getElementById('behind');
+
+        let header = document.querySelector("header")
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            if (value < 230) {
+                stars.style.left = value * 0.75 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                behind.style.top = value * 0.5 + 'px';
+
+                text.style.marginRight = value * 3 +'px';
+                btn.style.margintop = value * 1 + 'px';
+
+                header.style.top = value * 1.05 + 'px';
+            }
+        })
+    </script>
+</body>
