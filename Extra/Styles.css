@@ -140,6 +140,10 @@ section img#front
     z-index: 9;
     transform: translateY(-40px);
 }
+#vitu
+{
+    image-resolution: 100px;
+}
 
 .sec
 {
