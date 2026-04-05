@@ -13,9 +13,11 @@ body
     max-height: max-content;
     background: #0c1528f2;
     background-repeat: no-repeat;
-    scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: scroll;
+    align-self: center;
+    align-items: center;
+    align-content: center;
 }
 
 header
@@ -24,7 +26,7 @@ header
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px, 100px;
+    padding: 1px, 1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,13 +37,13 @@ header .logo
     color: #fff;
     font-weight: 700;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 4em;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 .lvl {
     display: flex;
-    font-size: 2em;
+    font-size: 4em;
     color: #fff;
 }
 .Main {
@@ -67,5 +69,19 @@ img {
     color: red;
 }
 #camo {
-    color: #10182c0e;
+    color: transparent;
+    font-size: 100px;
+}
+#tutulo {
+    font-size: 50px;
+    color: #fff;
+    align-self: center;
+    display: block;
+    margin-left: auto;
+}
+#vidoportrai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vb;
 }
