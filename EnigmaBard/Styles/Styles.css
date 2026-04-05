@@ -1,0 +1,71 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body
+{
+    min-height: 100vh;
+    max-height: max-content;
+    background: #0c1528f2;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px, 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.lvl {
+    display: flex;
+    font-size: 2em;
+    color: #fff;
+}
+.Main {
+    display: flex;
+    font-size: 1.5em;
+    color: antiquewhite;
+    text-align: center;
+    align-items: center;
+    display: inline;
+}
+img {
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 20px;
+   display: block;
+}
+.poem {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+}
+#red {
+    color: red;
+}
+#camo {
+    color: #10182c0e;
+}
