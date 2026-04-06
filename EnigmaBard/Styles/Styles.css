@@ -85,3 +85,10 @@ img {
     justify-content: center;
     height: 50vb;
 }
+#tutulo2 {
+    font-size: 70px;
+    color: #6eff0e;
+    align-self: center;
+    display: block;
+    margin-left: auto;
+}
